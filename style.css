@@ -1,0 +1,71 @@
+:root {
+  --bg-soft: #f5f1ed;
+  --surface: #fffdf9;
+  --text-dark: #42382f;
+  --text-muted: #7f7164;
+  --accent: #c17a5f;
+  --accent-soft: #e6c2a5;
+  --border: #dbd0c6;
+}
+
+body {
+  background-color: var(--bg-soft);
+  color: var(--text-dark);
+}
+
+header {
+  background-color: var(--accent);
+}
+
+header p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+main {
+  background-color: #f7f2ee;
+}
+
+.card {
+  background-color: var(--surface);
+  border-color: var(--border);
+}
+
+.card .btn-outline-primary {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.card .btn-outline-primary:hover,
+.card .btn-outline-primary:focus {
+  background-color: rgba(193, 122, 95, 0.12);
+  color: var(--text-dark);
+  border-color: var(--accent);
+}
+
+.btn-primary {
+  background-color: var(--text-dark);
+  border-color: var(--text-dark);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--text-muted);
+  border-color: var(--text-muted);
+}
+
+footer {
+  background-color: #4a3f36;
+}
+
+footer .text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(66, 56, 47, 0.12);
+}

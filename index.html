@@ -1,40 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Offbeat Retreats</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  Welcome to Offbeat Retreats!
-  Discover vacation rentals that are anything but ordinary.
-  Explore Now
-  
-  The UFO Bungalow
-  Experience an out-of-this-world stay in our UFO-themed bungalow. Enjoy cosmic views and "alien" hospitality—this stay is truly out of this world!
-  Book Now
-  
-  Haunted Loft
-  Live with friendly ghosts in our elegantly eerie loft. Paranormal activity is included at no extra charge!
-  Book Now
-  
-  The Meme Mansion
-  Step into a house where every wall is plastered with iconic memes. Picture "Side Eyeing Chloe" smirking in the living room, and "Chill Guy" artwork exuding laid-back vibes in the hallway.
-  Book Now
-  
-  The Upside-Down Hacienda
-  Challenge gravity in a house flipped on its roof—furniture, decor, and even your morning coffee cup are all upside down. Prepare for a topsy-turvy stay!
-  Book Now
-  
-  The Marshmallow Mansion
-  Float in fluffy luxury within walls of giant, pillowy marshmallows. Complimentary hot chocolate served 24/7 to keep the sugar rush going!
-  Book Now
-  
-  The Unicorn Lava Lounge
-  Bask in the warm glow of rainbow lava as unicorns trot by with your midnight snack. Glitter geysers activate on the hour—towels not included!
-  Book Now
-  
-  &copy; 2025 Offbeat Retreats. All whimsical rights reserved.  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-90 py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Offbeat Retreats</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rentals">Rentals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#special-deals">Special Deals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-white py-5 mb-4">
+    <div class="container text-center px-4">
+      <h1 class="display-5 fw-bold">Welcome to Offbeat Retreats</h1>
+      <p class="lead mb-4">Discover vacation rentals that are anything but ordinary.</p>
+      <a href="#rentals" class="btn btn-primary btn-lg">Explore Now</a>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container py-4" id="rentals">
+      <div class="mb-5">
+        <div class="row align-items-center">
+          <div class="col-sm-8">
+            <h2 class="h3 mb-1">Featured Rentals</h2>
+            <p class="text-muted mb-0">Explore our curated collection of unforgettable vacation homes.</p>
+          </div>
+          <div class="col-sm-4 text-sm-end mt-3 mt-sm-0">
+            <a href="#special-deals" class="text-decoration-none fw-semibold text-dark">View Special Deals</a>
+          </div>
+        </div>
+      </div>
+
+      <section id="special-deals" class="mb-5">
+        <div class="card border-0 rounded-4 shadow-sm p-4 bg-white">
+          <div class="row g-3 align-items-center">
+            <div class="col-md">
+              <h3 class="h5 mb-2">Special Deals</h3>
+              <p class="mb-0 text-muted">Save on select stays with seasonal packages and limited-time perks.</p>
+            </div>
+            <div class="col-md-auto">
+              <a href="#rentals" class="btn btn-outline-primary">Browse Rentals</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6 d-flex">
+          <article class="card shadow-sm flex-fill rounded-4 overflow-hidden">
+            <img src="img/ufo-bungalow.png" class="card-img-top" alt="The UFO Bungalow">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title h5">The UFO Bungalow</h2>
+              <p class="card-text flex-grow-1">Experience an out-of-this-world stay in our UFO-themed bungalow. Enjoy
+                cosmic views and "alien" hospitality—this stay is truly out of this world!</p>
+              <a href="#" class="btn btn-outline-primary mt-3">Book Now</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex">
+          <article class="card shadow-sm flex-fill rounded-4 overflow-hidden">
+            <img src="img/haunted-loft.png" class="card-img-top" alt="Haunted Loft">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title h5">Haunted Loft</h2>
+              <p class="card-text flex-grow-1">Live with friendly ghosts in our elegantly eerie loft. Paranormal
+                activity is included at no extra charge!</p>
+              <a href="#" class="btn btn-outline-primary mt-3">Book Now</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex">
+          <article class="card shadow-sm flex-fill rounded-4 overflow-hidden">
+            <img src="img/meme-mansion.png" class="card-img-top" alt="The Meme Mansion">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title h5">The Meme Mansion</h2>
+              <p class="card-text flex-grow-1">Step into a house where every wall is plastered with iconic memes.
+                Picture "Side Eyeing Chloe" smirking in the living room, and "Chill Guy" artwork exuding laid-back vibes
+                in the hallway.</p>
+              <a href="#" class="btn btn-outline-primary mt-3">Book Now</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex">
+          <article class="card shadow-sm flex-fill rounded-4 overflow-hidden">
+            <img src="img/upside-down-hacienda.png" class="card-img-top" alt="The Upside-Down Hacienda">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title h5">The Upside-Down Hacienda</h2>
+              <p class="card-text flex-grow-1">Challenge gravity in a house flipped on its roof—furniture, decor, and
+                even your morning coffee cup are all upside down. Prepare for a topsy-turvy stay!</p>
+              <a href="#" class="btn btn-outline-primary mt-3">Book Now</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex">
+          <article class="card shadow-sm flex-fill rounded-4 overflow-hidden">
+            <img src="img/marshmallow-mansion.png" class="card-img-top" alt="The Marshmallow Mansion">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title h5">The Marshmallow Mansion</h2>
+              <p class="card-text flex-grow-1">Float in fluffy luxury within walls of giant, pillowy marshmallows.
+                Complimentary hot chocolate served 24/7 to keep the sugar rush going!</p>
+              <a href="#" class="btn btn-outline-primary mt-3">Book Now</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex">
+          <article class="card shadow-sm flex-fill rounded-4 overflow-hidden">
+            <img src="img/unicorn-lava-lounge.png" class="card-img-top" alt="The Unicorn Lava Lounge">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title h5">The Unicorn Lava Lounge</h2>
+              <p class="card-text flex-grow-1">Bask in the warm glow of rainbow lava as unicorns trot by with your
+                midnight snack. Glitter geysers activate on the hour—towels not included!</p>
+              <a href="#" class="btn btn-outline-primary mt-3">Book Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-white py-4" id="contact">
+    <div class="container text-center small text-white-75">
+      &copy; 2025 Offbeat Retreats. All whimsical rights reserved.
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
